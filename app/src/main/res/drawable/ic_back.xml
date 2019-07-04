@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="10"
+        android:viewportHeight="18"
+        android:width="10dp"
+        android:height="18dp">
+    <group android:name="iPhone-8-Copy-3" android:translateY="-90" android:translateX="-39">
+        <path android:fillColor="#91151B" android:strokeWidth="1" android:name="Path" android:fillType="nonZero"
+              android:strokeColor="#00000000"
+              android:pathData="M42.017767 98.75 L48.6338835 92.1338835 C49.1220388 91.6457281 49.1220388 90.8542719 48.6338835 90.3661165 C48.1457281 89.8779612 47.3542719 89.8779612 46.8661165 90.3661165 L39.3661165 97.8661165 C38.8779612 98.3542719 38.8779612 99.1457281 39.3661165 99.6338835 L46.8661165 107.133883 C47.3542719 107.622039 48.1457281 107.622039 48.6338835 107.133883 C49.1220388 106.645728 49.1220388 105.854272 48.6338835 105.366117 L42.017767 98.75 Z"/>
+    </group>
+</vector>
