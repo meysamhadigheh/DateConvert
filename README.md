@@ -2,11 +2,11 @@
 
 This library helps you to make converting different date to each other
 
-hijri to gregoria and jalali
+hijri to gregorian and jalali
 
-gregoria to hijri and jalali
+gregorian to hijri and jalali
 
-jalali to gregoria and hijri
+jalali to gregorian and hijri
 
 ............................................................................
 
@@ -31,4 +31,6 @@ Step 2. Add the dependency
 How to use it as sample
 
         var date = CalendarHelper().jalaliToGregorian(1398, 04, 13)
+        dateTxt.text = "${date.year} ${date.month} ${date.day} ${date.monthName} ${date.dayName}"
+
 
