@@ -23,6 +23,8 @@ class MainActivity : ParentActivity() {
 
     override fun refreshContent() {
 
+        var date = CalendarHelper().jalaliToGregorian(1398, 0, 22)
+
     }
 
     override fun instantiateViews() {
@@ -233,8 +235,8 @@ class MainActivity : ParentActivity() {
         val gd = ch.jalaliToGregorian(year, month, day)
         val hd = ch.jalaliToHijri(year, month, day)
 
-        gregorianDate.text = "${gd.year} ${gd.month} ${gd.day}"
-        hijriDate.text = "${hd.year} ${hd.month} ${hd.day}"
+        gregorianDate.text = "${gd.year} ${gd.month} ${gd.day} ${gd.monthName} ${gd.dayName}"
+        hijriDate.text = "${hd.year} ${hd.month} ${hd.day} ${hd.monthName} ${hd.dayName}"
 
 
     }
@@ -245,8 +247,8 @@ class MainActivity : ParentActivity() {
         val gd = ch.hijriToGregorian(year, month, day)
         val jd = ch.hijriToJalali(year, month, day)
 
-        gregorianDate.text = "${gd.year} ${gd.month} ${gd.day}"
-        jalaliDate.text = "${jd.year} ${jd.month} ${jd.day}"
+        gregorianDate.text = "${gd.year} ${gd.month} ${gd.day} ${gd.monthName} ${gd.dayName}"
+        jalaliDate.text = "${jd.year} ${jd.month} ${jd.day} ${jd.monthName} ${jd.dayName}"
 
 
     }
@@ -258,8 +260,8 @@ class MainActivity : ParentActivity() {
         val jd = ch.gregorianToJalali(year, month, day)
         val hd = ch.gregorianToHijri(year, month, day)
 
-        jalaliDate.text = "${jd.year} ${jd.month} ${jd.day}"
-        hijriDate.text = "${hd.year} ${hd.month} ${hd.day}"
+        jalaliDate.text = "${jd.year} ${jd.month} ${jd.day} ${jd.monthName} ${jd.dayName}"
+        hijriDate.text = "${hd.year} ${hd.month} ${hd.day} ${hd.monthName} ${hd.dayName}"
 
 
     }

@@ -109,7 +109,14 @@ class CalendarHelper {
         val gc = JalaliCalendar(selectedYear, selectedMonth, selectedDay).toGregorian()
 
 
-        return Date(gc.get(Calendar.YEAR), (gc.get(Calendar.MONTH) + 1), gc.get(Calendar.DAY_OF_MONTH))
+        return Date(
+            gc.get(Calendar.YEAR),
+            (gc.get(Calendar.MONTH) + 1),
+            gc.get(Calendar.DAY_OF_MONTH),
+            monthsGregorian[gc.get(Calendar.MONTH) + 1].toString(),
+            daysGregorian[gc.get(Calendar.DAY_OF_WEEK) + 1].toString()
+
+        )
 
 
     }
@@ -121,7 +128,13 @@ class CalendarHelper {
         hc.time = gc.time
 
 
-        return Date(hc.get(Calendar.YEAR), (hc.get(Calendar.MONTH) + 1), hc.get(Calendar.DAY_OF_MONTH))
+        return Date(
+            hc.get(Calendar.YEAR),
+            (hc.get(Calendar.MONTH) + 1),
+            hc.get(Calendar.DAY_OF_MONTH),
+            monthsHijri[hc.get(Calendar.MONTH) + 1].toString(),
+            daysHijri[hc.get(Calendar.DAY_OF_WEEK) + 1].toString()
+        )
 
 
     }
@@ -134,7 +147,13 @@ class CalendarHelper {
         hc.time = gc.time
 
 
-        return Date(hc.get(Calendar.YEAR), (hc.get(Calendar.MONTH) + 1), hc.get(Calendar.DAY_OF_MONTH))
+        return Date(
+            hc.get(Calendar.YEAR),
+            (hc.get(Calendar.MONTH) + 1),
+            hc.get(Calendar.DAY_OF_MONTH),
+            monthsHijri[hc.get(Calendar.MONTH) + 1].toString(),
+            daysHijri[hc.get(Calendar.DAY_OF_WEEK) + 1].toString()
+        )
 
 
     }
@@ -145,7 +164,11 @@ class CalendarHelper {
 
         val jc = JalaliCalendar(GregorianCalendar(selectedYear, selectedMonth - 1, selectedDay))
 
-        return Date(jc.year, jc.month, jc.day)
+        return Date(
+            jc.year, jc.month, jc.day,
+            monthsJalali[jc.month].toString(),
+            daysJalali[jc.dayOfWeek + 1].toString()
+        )
 
     }
 
@@ -157,7 +180,11 @@ class CalendarHelper {
 
 
 
-        return Date(gc.get(Calendar.YEAR), (gc.get(Calendar.MONTH) + 1), gc.get(Calendar.DAY_OF_MONTH))
+        return Date(
+            gc.get(Calendar.YEAR), (gc.get(Calendar.MONTH) + 1), gc.get(Calendar.DAY_OF_MONTH),
+            monthsGregorian[gc.get(Calendar.MONTH) + 1].toString(),
+            daysGregorian[gc.get(Calendar.DAY_OF_WEEK) + 1].toString()
+        )
 
 
     }
@@ -171,7 +198,11 @@ class CalendarHelper {
         val jc = JalaliCalendar(gc)
 
 
-        return Date(jc.year, jc.month, jc.day)
+        return Date(
+            jc.year, jc.month, jc.day,
+            monthsJalali[jc.month].toString(),
+            daysJalali[jc.dayOfWeek + 1].toString()
+        )
 
 
     }
