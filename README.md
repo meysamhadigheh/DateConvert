@@ -8,7 +8,9 @@ gregorian to hijri and jalali
 
 jalali to gregorian and hijri
 
-![date converter demo](Jul-13-2019 17-59-02.gif)
+<p align="center">
+  <img width="240" height="499" src="https://wmpics.pics/di-H9E1.gif">
+</p>
 
 ............................................................................
 
