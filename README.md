@@ -8,7 +8,7 @@ gregorian to hijri and jalali
 
 jalali to gregorian and hijri
 
-<p align="right">
+<p align="left">
   <img width="320" height="567" src="https://wmpics.pics/di-H9E1.gif">
 </p>
 
